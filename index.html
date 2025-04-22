@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#d35400" />
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">🍔 Burger Bliss</div>
+    <nav class="nav" id="navMenu">
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burgerToggle">☰</button>
+  </header>
+
+  <main class="grid-container">
+    <aside class="sidebar">🔥 Today's Special: Buy 1 Get 1 Free!</aside>
+   
+    <section class="content">
+      <h1>Welcome to Burger Bliss</h1>
+      <p>Enjoy the juiciest burgers in town!</p>
+
+      <picture>
+        
+        <source media="(max-width: 600px)" 
+                srcset="images/mobile-portrait.avif 1x, 
+                        images/mobile-portrait@2x.avif 2x"
+                type="image/avif">
+        <source media="(max-width: 600px)" 
+                srcset="images/mobile-portrait.webp 1x, 
+                        images/mobile-portrait@2x.webp 2x"
+                type="image/webp">
+        <source media="(max-width: 600px)" 
+                srcset="images/mobile-portrait.jpg 1x, 
+                        images/mobile-portrait@2x.jpg 2x"
+                type="image/jpeg">
+      
+        
+        <source media="(min-width: 601px)" 
+                srcset="images/desktop-landscape.avif 1x, 
+                        images/desktop-landscape@2x.avif 2x"
+                type="image/avif">
+        <source media="(min-width: 601px)" 
+                srcset="images/desktop-landscape.webp 1x, 
+                        images/desktop-landscape@2x.webp 2x"
+                type="image/webp">
+        <img src="images/desktop-landscape.jpg" 
+             srcset="images/desktop-landscape.jpg 1x, 
+                     images/desktop-landscape@2x.jpg 2x"
+             alt="Juicy burger with fries" 
+             loading="lazy" />
+      </picture>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>🍔 Classic Cheeseburger</h3>
+          <p>Beef patty, cheese, lettuce, tomato, ketchup</p>
+        </div>
+        <div class="card">
+          <h3>🌶 Spicy Jalapeño Burger</h3>
+          <p>Beef patty, jalapeños, chipotle mayo, pepper jack</p>
+        </div>
+        <div class="card">
+          <h3>🥓 BBQ Bacon Burger</h3>
+          <p>Beef patty, smoked bacon, BBQ sauce, cheddar</p>
+        </div>
+        <div class="card">
+          <h3>🧀 Double Cheese Melt</h3>
+          <p>Double beef, double cheese, pickles, special sauce</p>
+        </div>
+        <div class="card">
+          <h3>🥬 Vegan Delight</h3>
+          <p>Plant-based patty, vegan cheese, avocado spread</p>
+        </div>
+        <div class="card">
+          <h3>🍄 Mushroom Swiss</h3>
+          <p>Beef patty, sautéed mushrooms, Swiss cheese</p>
+        </div>
+        <div class="card">
+          <h3>🔥 Inferno Burger</h3>
+          <p>Extra spicy patty, hot sauce, jalapeños, ghost pepper cheese</p>
+        </div>
+        <div class="card">
+          <h3>🧄 Garlic Lovers</h3>
+          <p>Garlic aioli, roasted garlic, beef patty, arugula</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 Burger Bliss</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
